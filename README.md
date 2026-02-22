@@ -26,26 +26,18 @@ Built using Pycord
    ```
    > **Never share your token or commit it to git.** Anyone with it can control your bot. Make sure you add `.env` to `.gitignore`. If you cloned this repo, it's already done for you.
 
-### 2. Enable Required Intents
+### 2. Invite the Bot to Your Server
 
-Still on the **Bot** page in the Developer Portal:
-
-1. Scroll down to **Privileged Gateway Intents**
-2. Enable **Server Members Intent** and **Message Content Intent**
-3. Click **Save Changes**
-
-### 3. Invite the Bot to Your Server
-
-1. In the left sidebar, click **OAuth2 → URL Generator**
-2. Under **Scopes**, check `bot` and `applications.commands`
-3. Under **Bot Permissions**, check the following:
+1. On the left sidebar, click **OAuth2** and scroll down to **URL Generator**
+2. You should see **Scopes** and a bunch of options to check. Check `bot` and `applications.commands`
+3. Scroll down to **Bot Permissions** and check the following or check `Administrator` if just testing:
    - `Read Messages / View Channels`
    - `Send Messages`
    - `Create Public Threads`
    - `Send Messages in Threads`
    - `Manage Threads`
 4. Copy the generated URL at the bottom of the page
-5. Paste it in your browser, select your server from the dropdown, and verify the permissions are set correctly for your bot. Then click **Authorize** 
+5. Make sure you're logged into discord client select your server from the dropdown, then paste the URL into browser. Verify the permissions are set correctly for your bot. Then click **Authorize** to add the bot to your server.
 
 ### 4. Get Your Forum Channel ID
 
@@ -60,3 +52,4 @@ Still on the **Bot** page in the Developer Portal:
 uv sync
 uv run bot.py
 ```
+
