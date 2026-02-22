@@ -4,8 +4,6 @@ Built using Pycord
 ## Features
 - Automatically posts a weekly completion log thread to a forum channel
 
----
-
 ## Setup
 
 ### Prerequisites
@@ -52,4 +50,5 @@ Built using Pycord
 uv sync
 uv run bot.py
 ```
+
 
